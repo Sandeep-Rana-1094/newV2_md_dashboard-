@@ -1,0 +1,6 @@
+{
+  "name": "Dashboard",
+  "description": "A visually appealing Latam Reserve Dashboard that provides insights and analytics on order reserve data for the Latin America region, based on a Google Sheet.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

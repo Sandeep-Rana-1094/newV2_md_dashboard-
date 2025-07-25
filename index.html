@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'background': '#0d1117', // A deep, professional navy/slate
+              'surface': '#161b22',   // A slightly lighter surface for cards
+              'primary': '#2dd4bf',   // A vibrant, modern teal for accents
+              'secondary': '#a855f7', // A rich purple for secondary accents
+              'muted': '#8b949e',     // A clear, accessible gray for muted text
+              'border-default': '#30363d', // A subtle border that blends in
+              'text-primary': '#e6edf3',   // A softer, off-white for primary text
+              'text-secondary': '#a1aab4', // A lighter gray for secondary text
+              'amber': { 
+                  400: '#facc15',
+                  500: '#f59e0b',
+              },
+              'green': {
+                  400: '#4ade80',
+                  500: '#22c55e',
+              },
+              'red': {
+                  400: '#f87171',
+                  500: '#ef4444',
+              },
+               'blue': {
+                  500: '#3b82f6',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+                'sm': '0 1px 2px 0 rgb(0 0 0 / 0.1)',
+                'md': '0 3px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+                'lg': '0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2)',
+                'inner-glow': 'inset 0 2px 4px 0 rgba(0,0,0,0.05)',
+                'primary-glow': '0 0 15px 0 rgba(45, 212, 191, 0.3)',
+            },
+            borderRadius: {
+              'xl': '0.75rem',
+              '2xl': '1rem',
+              '3xl': '1.5rem',
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "recharts": "https://esm.sh/recharts@^3.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text-primary">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
